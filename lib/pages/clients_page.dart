@@ -75,6 +75,7 @@ class _ClientsPageState extends State<ClientsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     TextFormField(
+                      key: const Key('nameField'),
                       controller: nomeInput,
                       decoration: const InputDecoration(
                         labelText: 'Nome',
@@ -83,6 +84,7 @@ class _ClientsPageState extends State<ClientsPage> {
                     ),
                     const Padding(padding: EdgeInsets.all(5)),
                     TextFormField(
+                      key: const Key('emailField'),
                       controller: emailInput,
                       decoration: const InputDecoration(
                         labelText: 'Email',
